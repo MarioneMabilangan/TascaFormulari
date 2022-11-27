@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:text="Bom dia!"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="270dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="108dp"
+        android:drawableLeft="@drawable/_56werewolf"
+        android:ems="10"
+        android:text="nom"
+        android:textSize="40dp"
+        android:textColorHint="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cognoms"
+        android:layout_width="270dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="188dp"
+        android:drawableLeft="@drawable/_56x256bb"
+        android:ems="10"
+        android:text="cognoms"
+        android:textColorHint="@color/purple_200"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/telefon"
+        android:layout_width="271dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="264dp"
+        android:drawableLeft="@drawable/cf81950b_c471_45e2_a40d_2e7592a091f0_"
+        android:ems="10"
+        android:text="telèfon"
+        android:textColorHint="@color/purple_200"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="324dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="352dp"
+        android:drawableLeft="@drawable/thunderbird"
+        android:ems="10"
+        android:text="mail"
+        android:textColorHint="@color/purple_200"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adreça"
+        android:layout_width="271dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="436dp"
+        android:drawableLeft="@drawable/_0040"
+        android:ems="10"
+        android:text="adreça"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
