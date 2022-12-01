@@ -26,7 +26,6 @@
         android:drawableLeft="@drawable/_56werewolf"
         android:ems="10"
         android:hint="nom"
-        android:textStyle="bold"
         android:inputType="textPersonName"
         android:textColorHint="@color/purple_200"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,8 +39,6 @@
         android:layout_marginTop="176dp"
         android:drawableLeft="@drawable/_56x256bb"
         android:ems="10"
-        android:hint="cognoms"
-        android:textStyle="bold"
         android:inputType="textPersonName"
         android:textColorHint="@color/purple_200"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,9 +52,7 @@
         android:layout_marginTop="272dp"
         android:drawableLeft="@drawable/cf81950b_c471_45e2_a40d_2e7592a091f0_"
         android:ems="10"
-        android:hint="telèfon"
         android:inputType="phone"
-        android:textStyle="bold"
         android:textColorHint="@color/purple_200"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -102,4 +97,26 @@
         android:text="Validar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ListView
+            android:id="@+id/simpleListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,24 +8,43 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Formulari extends AppCompatActivity {
+    ListView simpleListView;
     private EditText nom, cognoms, telefon, mail, adreça;
+    String courseList[] = {"C-Programming", "Data Structure", "Database", "Python",
+            "Java", "Operating System", "Compiler Design", "Android Development"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulari);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner3);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.valores_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        simpleListView = (ListView) findViewById(R.id.simpleListView);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+                R.drawable.item_view, R.id.itemTextView, courseList);
+        simpleListView.setAdapter(arrayAdapter);
         nom=(EditText) findViewById(R.id.enom);
         cognoms=(EditText) findViewById(R.id.cognoms);
         telefon=(EditText) findViewById(R.id.telefon);
         mail=(EditText) findViewById(R.id.mail);
         adreça=(EditText) findViewById(R.id.adreça);
+        nom.setHint(Html.fromHtml("nom de " + "<b>" +"usuari" + "<b>"));
+        cognoms.setHint(Html.fromHtml(""+"<b>" +"cognoms" + "<b>" +" del nom"));
+        telefon.setHint(Html.fromHtml(""+"<b>" +"tèlefon"+ "<b>" + " mòbil"));
     }
 
     public void validar(View v){
+
         Intent i = new Intent(Formulari.this, Personal.class);
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setTitle("Protecció de dades..!!!");
